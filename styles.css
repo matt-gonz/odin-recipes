@@ -3,32 +3,56 @@
     background: rgb(243, 241, 234);
 }
 
-.pagetitle,
-.subheading,
-p{
-    text-align: center;
+.pagetitle{
+    font-size: 42px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
 .recipebanner{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     font-size: 18px;
-    gap: 20px;
+    gap: 40px;
 }
 
 div img{
     width: 300px;
     height: 200px;
+    border-radius: 20px;
 }
 
 .recipe{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
+    justify-content: center;
     width: 350px;
     text-align: center;
+    border: dashed 2px black;
+    border-radius: 10px;
+    padding: 100px 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.recipe:hover{
+    transform: scale(1.05);
+    background-color: rgba(128, 128, 128, 0.089);
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
 .product-banner{
@@ -52,5 +76,14 @@ div.pageslist{
 .myOL{
     display: inline-block;
     text-align: left;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    width: 100%;
 }
 
