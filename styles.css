@@ -5,6 +5,7 @@
 
 body{
     height: 80vh;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -25,7 +26,7 @@ main{
 .recipebanner{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 18px;
     gap: 40px;
@@ -40,14 +41,13 @@ div img{
 .recipe{
     display: flex;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
     justify-content: center;
-    width: 350px;
     text-align: center;
     border: dashed 2px black;
     border-radius: 10px;
     padding: 100px 25px;
+    gap: 30px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -139,6 +139,10 @@ footer{
     position: absolute;
     bottom: 0;
     padding: 30px;
-    width: 100%;
 }
 
+@media screen and (max-device-width: 640px) and (orientation: portrait) {
+    .recipebanner{
+        flex-direction: column;
+    }
+}
