@@ -6,7 +6,7 @@
 body{
     height: 80vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Main page styles */
@@ -137,14 +137,34 @@ div.pageslist{
 footer{
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 30px;
     width: 100%;
 }
 
-@media screen and (max-device-width: 640px) and (orientation: portrait) {
+@media screen and (max-device-width: 912px) and (orientation: portrait) {
     .recipebanner{
         flex-direction: column;
+        transform: scale(0.95);
+    }
+
+    .recipe{
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (max-device-height: 900px) and (orientation: landscape) {
+    main{
+        gap: 0px;
+    }
+
+    .recipebanner{
+        transform: scale(0.6);
+        margin-top: -75px;
+    }
+
+    .recipe{
+        padding: 80px 20px;
     }
 }
